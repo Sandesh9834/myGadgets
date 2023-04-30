@@ -8,7 +8,7 @@ export const MyGadgets = ({ productList }) => {
       <h2>Gadgets</h2>
       <ol>
         {productList.map((product) => (
-          <li
+          <li key={product.id}
             style={{
               listStyle: "none",
               border: "2px solid black",
